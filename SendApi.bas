@@ -28,9 +28,9 @@ Sub SenAPIrequest()
     
     
     i = 3
-    For Each pokemon In objectJson("data")
-        WS.Cells(i, 1) = pokemon("title")
-        WS.Cells(i, 2) = pokemon("description")
+    For Each result In objectJson("data")
+        WS.Cells(i, 1) = result("title")
+        WS.Cells(i, 2) = result("description")
         i = i + 1
     Next
    
