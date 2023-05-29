@@ -28,7 +28,7 @@ Sub Clear()
     
     
     i = 3
-    For Each pokemon In objectJson("data")
+    For Each result In objectJson("data")
         WS.Cells(i, 1) = ""
         WS.Cells(i, 2) = ""
         i = i + 1
